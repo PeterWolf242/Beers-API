@@ -1,31 +1,35 @@
-# Beers API
+# 🍺 Beers API
 
-Eine RESTful API zur Verwaltung und Abfrage von Biersorten.
+Willkommen zur **Beers API**, einer einfachen und leistungsfähigen RESTful API zur Verwaltung und Abfrage von Biersorten. 
 
-## Installation
+---
 
+## 🚀 Installation
+
+### 1️⃣ Repository klonen
 ```bash
-# Repository klonen
 git clone <repository-url>
 cd beers-api
+```
 
-# Abhängigkeiten installieren
+### 2️⃣ Abhängigkeiten installieren
+```bash
 npm install
 ```
 
-## Nutzung
-
+### 3️⃣ Server starten
 ```bash
-# Server starten
 npm start
 ```
 
-Der Server läuft standardmäßig auf `http://localhost:3000`.
+🔗 Der Server läuft standardmäßig auf [`http://localhost:3000`](http://localhost:3000).
 
-## API-Endpunkte
+---
 
-### GET /beers
-Alle verfügbaren Biere abrufen.
+## 📌 API-Endpunkte
+
+### 🔍 GET `/beers`
+📥 Alle verfügbaren Biere abrufen.
 
 **Antwort:**
 ```json
@@ -35,19 +39,22 @@ Alle verfügbaren Biere abrufen.
 ]
 ```
 
-### GET /beers/:id
-Ein einzelnes Bier abrufen.
+---
 
-**Beispiel:**
-`GET /beers/1`
+### 🔍 GET `/beers/:id`
+📥 Ein einzelnes Bier abrufen.
+
+**Beispiel:** `GET /beers/1`
 
 **Antwort:**
 ```json
 {"id": 1, "name": "Pilsner", "brewery": "Brauerei A"}
 ```
 
-### POST /beers
-Ein neues Bier hinzufügen.
+---
+
+### ➕ POST `/beers`
+➕ Ein neues Bier hinzufügen.
 
 **Request Body:**
 ```json
@@ -59,17 +66,24 @@ Ein neues Bier hinzufügen.
 {"id": 3, "name": "Kölsch", "brewery": "Brauerei C"}
 ```
 
-### DELETE /beers/:id
-Ein Bier löschen.
+---
 
-**Beispiel:**
-`DELETE /beers/1`
+### ❌ DELETE `/beers/:id`
+🗑️ Ein Bier löschen.
+
+**Beispiel:** `DELETE /beers/1`
 
 **Antwort:**
 ```json
 {"message": "Bier gelöscht"}
 ```
 
-## Lizenz
+---
 
-MIT License
+## 📜 Lizenz
+
+⚖️ Diese API steht unter der **MIT License**.
+
+---
+
+💡 Viel Spaß beim Entwickeln und Prost! 🍻
