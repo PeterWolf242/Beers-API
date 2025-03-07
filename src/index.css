@@ -1,0 +1,85 @@
+@font-face {
+	font-family: "Roboto Slab";
+	src: url("/src/assets/fonts/RobotoSlab.woff2") format("woff2"),
+		url("/src/assets/fonts/RobotoSlab.woff") format("woff"),
+		url("/src/assets/fonts/RobotoSlab.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: light dark;
+	color: var(--color_black);
+	background-color: var(--color_white);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--color_white: #ffffff;
+	--color_white_second: #e5e5e5;
+	--color_black: #333333;
+	--color_yellow: rgb(255, 202, 65);
+	--color_yellow_second: rgb(249, 199, 79, 0.2);
+	--color_black_light: rgba(51, 51, 51, 0.665);
+	--transition: 0.5s all ease-in-out;
+	--number-20: 20px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+body {
+	font-family: "Roboto Slab", sans-serif;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url("/3D_animated_beer_background.gif") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	min-width: max(70vw, 100%);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 4rem;
+	margin: 0 auto;
+	padding: 4rem 10px;
+}
+
+.item {
+	width: 100%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btnBack {
+	margin-top: 1rem;
+	transition: var(--transition);
+}
+
+.btnBack:hover {
+	transform: scale(0.96);
+}

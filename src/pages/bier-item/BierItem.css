@@ -1,0 +1,115 @@
+.container {
+	display: flex;
+	gap: 2rem;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 20vh 20px;
+}
+
+.bier-item {
+	width: 90vw;
+	height: 60vh;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	border-radius: var(--number-20);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+	margin: auto;
+	overflow: hidden;
+	background-color: transparent;
+	backdrop-filter: blur(20px);
+	color: var(--color_white);
+	padding-right: 4rem;
+}
+
+/* * Picture BierItem */
+.item-img {
+	display: grid;
+	grid-column: 1 / 3;
+	grid-row: 1/-1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: var(--number-20);
+}
+
+.item-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.bier-item-info {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-column: 3/6;
+	grid-row: 2/3;
+	padding-top: 1rem;
+}
+
+.bier-item-info h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	color: var(--color_white);
+	display: inline-block;
+	width: fit-content;
+	border-top: 2px solid var(--color_white);
+	border-bottom: 2px solid var(--color_white);
+	margin-bottom: 1rem;
+	padding: 1rem 2rem;
+}
+
+.bier-item-info p {
+	font-size: 1.25rem;
+	color: var(--color_white);
+	margin: 0.5rem 0;
+	font-weight: bold;
+}
+
+.bier-item-info p:nth-of-type(1) {
+	color: var(--color_yellow);
+	font-size: 1.4rem;
+	letter-spacing: 4px;
+}
+
+.bier-item-info p:nth-of-type(2) {
+	color: var(--color_black_light);
+}
+
+.bier-item-info p:nth-of-type(3) {
+	color: var(--color_black);
+}
+
+@media screen and (max-width: 768px) {
+	.bier-item {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		gap: 1rem;
+		border: 4px solid red;
+	}
+
+	.item-img {
+		display: flex;
+		flex: 1;
+		width: 100vw;
+		height: 100%;
+		border-radius: var(--number-20);
+		overflow: hidden !important;
+		border: 4px solid blue;
+	}
+
+	.bier-item-info {
+		background-color: rgb(219, 143, 30);
+		max-width: 100%;
+		padding: 0;
+	}
+}

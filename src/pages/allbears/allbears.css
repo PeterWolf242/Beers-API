@@ -1,0 +1,135 @@
+.container_all {
+	width: 90vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 4rem 2rem;
+	padding: 25vh 10px;
+	margin: 0 auto;
+}
+
+.beer-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: flex-start;
+	gap: 1rem;
+	padding: 1rem;
+	backdrop-filter: blur(50px);
+	border-radius: var(--number-20);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+	color: var(--color_white);
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.beer-card:hover {
+	box-shadow: 0 0 10px var(--color_black);
+}
+
+.beer-card:hover .beer-info h2 {
+	transform: scale(1.1);
+	color: var(--color_yellow);
+	text-shadow: 0 0 10px var(--color_black);
+}
+
+.beer-img {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	border-radius: var(--number-20);
+}
+
+.beer-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--number-20);
+}
+
+.beer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	border-top: 2px solid var(--color_white);
+}
+
+.beer-info h2 {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(25px, 4vw, 30px);
+	font-weight: bold;
+	text-align: center;
+	text-wrap: balance;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	transition: var(--transition);
+}
+
+.beer-description {
+	width: 100%;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: var(--number-20);
+	background-color: var(--color_yellow_second);
+	border-radius: var(--number-20);
+	transition: 0.3s all ease-in-out;
+}
+
+.beer-card:hover .beer-description {
+	box-shadow: 0 0 2px var(--color_black);
+}
+
+.beer-description p {
+	width: fit-content;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	text-align: left;
+	margin-right: auto;
+	padding-left: 15px;
+}
+
+.btnDetails {
+	width: fit-content;
+	margin: 0 auto;
+	padding: 10px 30px;
+	background-color: var(--color_yellow);
+	border: none;
+	outline: none;
+	border-radius: var(--number-20);
+	border: 2px solid transparent;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--color_black_light);
+	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	transition: var(--transition);
+}
+
+.btnDetails:hover {
+	background-color: transparent;
+	color: var(--color_white);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	border: 2px solid var(--color_yellow);
+}
+
+.btnTop {
+	position: fixed;
+	bottom: 6rem;
+	right: 1rem;
+	z-index: 1000;
+	transform: rotate(90deg);
+	opacity: 0.8;
+	width: 40px;
+	aspect-ratio: 1/1;
+}
