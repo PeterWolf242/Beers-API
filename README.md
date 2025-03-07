@@ -53,37 +53,5 @@ npm start
 
 ---
 
-### ➕ POST `/beers`
-➕ Ein neues Bier hinzufügen.
-
-**Request Body:**
-```json
-{"name": "Kölsch", "brewery": "Brauerei C"}
-```
-
-**Antwort:**
-```json
-{"id": 3, "name": "Kölsch", "brewery": "Brauerei C"}
-```
-
----
-
-### ❌ DELETE `/beers/:id`
-🗑️ Ein Bier löschen.
-
-**Beispiel:** `DELETE /beers/1`
-
-**Antwort:**
-```json
-{"message": "Bier gelöscht"}
-```
-
----
-
-## 📜 Lizenz
-
-⚖️ Diese API steht unter der **MIT License**.
-
----
 
 💡 Viel Spaß beim Entwickeln und Prost! 🍻
